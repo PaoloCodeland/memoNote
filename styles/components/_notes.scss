@@ -1,0 +1,69 @@
+.notes-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    .note {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        text-align: left;
+        border-radius: 3px;
+        box-shadow: 0 15px 10px -10px rgba($black, 0.1);
+    }
+    .note-title {
+        margin: 0 0 1rem;
+        padding-bottom: 1rem;
+        font-size: 2rem;
+        border-bottom: 1px solid rgba($black, 0.1);
+    }
+    .note-text {
+        flex-grow: 1;
+    }
+    .note-actions {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 0.5rem;
+        padding-top: 0.5rem;
+        text-align: right;
+        font-size: 1.2rem;
+        border-top: 1px solid rgba($black, 0.1);
+
+        .action {
+            width: 2.75rem;
+            height: 2.75rem;
+            padding: 0.5rem;
+            cursor: pointer;
+            transition: background 0.3s;
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+            &:hover {
+                background: rgba($black, 0.1);
+            }
+        }
+    }
+}
+
+@media (min-width: 480px) {
+    .notes-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .notes-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .notes-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1280px) {
+    .notes-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}

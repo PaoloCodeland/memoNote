@@ -1,0 +1,28 @@
+.color-tooltip {
+    display: none;
+    width: 12rem;
+    position: absolute;
+    transform: translate(-10.3rem, -4rem);
+    color: $back-col;
+    background: $text-col;
+    &.active {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .title {
+        width: 100%;
+        margin: 0 0.5rem;
+        font-size: 1.2rem;
+    }
+    .color {
+        width: 2rem;
+        height: 2rem;
+        margin: 0.5rem;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}

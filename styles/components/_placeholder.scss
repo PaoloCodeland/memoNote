@@ -1,0 +1,23 @@
+.placeholder {
+    display: none;
+    margin-top: 5rem;
+    .icon {
+        width: 7rem;
+    }
+    .text {
+        margin-top: 1rem;
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 480px) {
+    .placeholder {
+        .icon {
+            width: 10rem;
+        }
+        .text {
+            margin-top: 2rem;
+            font-size: 2rem;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.button {
+    appearance: none;
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: $font-bold;
+    font-size: 1.4rem;
+    color: $white;
+    background: $primary;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    &:hover,
+    &:focus {
+        background: darken($primary, 10%);
+    }
+    &.white {
+        background: $light-gray;
+        color: $text-col;
+        &:hover,
+        &:focus {
+            background: darken($white, 10%);
+        }
+    }
+    &.small {
+        padding: 0.35rem 0.75rem;
+        font-size: 1.2rem;
+    }
+}
