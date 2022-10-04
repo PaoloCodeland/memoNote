@@ -28,6 +28,7 @@
         background: transparent;
         border: 0;
         border-bottom: 1px solid $gray;
+        border-radius: 0;
         outline: none;
         transition: border 0.3s;
         &:hover,
@@ -37,26 +38,23 @@
     }
     .wrap-modal-text {
         position: relative;
-        .modal-text {
-            text-align: left;
-            padding-top: 1rem;
-            padding-bottom: 2rem;
-            line-height: 3rem;
-            &:not(:empty) + label {
-                display: none;
-            }
-        }
+        margin-top: 2rem;
         label {
             position: absolute;
-            left: 0;
-            top: 1.5rem;
+            top: 0;
             left: 1rem;
+        }
+        .modal-text {
+            text-align: left;
+            padding-top: 3rem;
+            padding-bottom: 2rem;
+            line-height: 3rem;
         }
     }
     .actions {
         text-align: right;
     }
     .button {
-        margin-top: 1rem;
+        margin-top: 3rem;
     }
 }

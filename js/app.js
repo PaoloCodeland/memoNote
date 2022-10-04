@@ -49,7 +49,6 @@ class App {
         this.$modalSave.addEventListener('click', event => {
             event.stopPropagation();
             this.updateNote();
-            this.closeModal();
         });
 
         this.$colorsTooltipBtns.forEach(btn => {
@@ -143,10 +142,12 @@ class App {
 
     updateNote() {
         if (!this.$modalText.textContent.trim()) return;
+
         const note = this.notes.find(note => note.id == this.actualNoteEdit);
         note.title = escapeHtml(this.$modalTitle.value.trim());
         note.text = escapeHtml(this.$modalText.textContent.trim());
         this.displayNotes();
+        this.closeModal();
         this.saveNotes();
     }
 
