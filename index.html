@@ -3,22 +3,24 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.570c7dee.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACEklEQVRYR+2XP2gUURDGv9n3djcxF4WkOQubgAraxYABIaQwIoGUWgYbbaxsbGxtLSxUbERQm1RWiklQFIRoDiu1sLAJMaCe+PeO23tvxjnxwl1YA0s2f5Ad2G6Y7/e+eY+ZJWxz0DbrY2cBVG4iPHIAg2iiP3EI83RHIriY8RMD+EQjqvA3uhyQJyiz2HMsGBNBOU8AFaqCsWDhrtIJfEgHmMV+Z+wNCI5qQilngJoAFQ93tuc43qUCNB7gEEV2RmkP5ynerqUAbyRxp+NJvC0ACgcKBwoHCgf+QwcEK0TymoGPOvVWx23nTCGiZSvu+j+n4UaGEUHmnNCVuOleweNX6jArKdo4GqTJubdAIPfCxF/AS537p2DxXr/OqKvoEBxG4HTabgIAy+2w4c+3RJpLZhoBjnXqG0PLCvnC9PmnNIrv+TvQBtDKzdhco4DO/BERsFq+AqFnnngmKvnHWwcg8BTgCzPNi4pX63527xTqm9uCtgNE0ypeBWjOge/Gff45RvGjU7xlUNdSupFXIGtaEAQ0wWo7B3wnqfnF3VP4nPYyurfihzjoI3tLE4d1K+7JsheuAuht50F7SZiG0nq+tmYXQO0R9kWBuYiAhnU135MFgAT3rXWX0Q/vv5mTXmDSer4ugFQQ1qso9zJ2JVogC0Bk8RUTettbR1pQjFak9HxdgCyCeeXurH/DvE6Vpc5vkeFdMCFMF7MAAAAASUVORK5CYII=">
-    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA/klEQVQ4T+3TPU8CQRAG4Hd214uXnIiFVpSWJLSU0lLRUNDzH/An8FeEBhK0EEpLShM7Kyto+CqEu7lxl48QkivWkFi59cwzm513CWcecv0iIIyQW8UIfLwoRIwHzIkgO2CI60SZrpVKPoBt+zAmqVEFsy2wfMHtZaDfAbrzAiCT7w0Xr6qY/gN/9QZ23U92Oz0wkv2W1pr5lapYe23BAg2t+Y03uuyAVKmvCxOPbQ4SP4Clvg2cpg6BPhnpY6C592sAWrVZ0lZguO+aHbqL8gA3HJqBiNxnJZEYTXvtqVBaOEw+1B0/0zPyKwWTBUTAAqF9QjdxP/kE8Mt/dtUPIdOQEbWPNoEAAAAASUVORK5CYII=">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.570c7dee.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACEklEQVRYR+2XP2gUURDGv9n3djcxF4WkOQubgAraxYABIaQwIoGUWgYbbaxsbGxtLSxUbERQm1RWiklQFIRoDiu1sLAJMaCe+PeO23tvxjnxwl1YA0s2f5Ad2G6Y7/e+eY+ZJWxz0DbrY2cBVG4iPHIAg2iiP3EI83RHIriY8RMD+EQjqvA3uhyQJyiz2HMsGBNBOU8AFaqCsWDhrtIJfEgHmMV+Z+wNCI5qQilngJoAFQ93tuc43qUCNB7gEEV2RmkP5ynerqUAbyRxp+NJvC0ACgcKBwoHCgf+QwcEK0TymoGPOvVWx23nTCGiZSvu+j+n4UaGEUHmnNCVuOleweNX6jArKdo4GqTJubdAIPfCxF/AS537p2DxXr/OqKvoEBxG4HTabgIAy+2w4c+3RJpLZhoBjnXqG0PLCvnC9PmnNIrv+TvQBtDKzdhco4DO/BERsFq+AqFnnngmKvnHWwcg8BTgCzPNi4pX63527xTqm9uCtgNE0ypeBWjOge/Gff45RvGjU7xlUNdSupFXIGtaEAQ0wWo7B3wnqfnF3VP4nPYyurfihzjoI3tLE4d1K+7JsheuAuht50F7SZiG0nq+tmYXQO0R9kWBuYiAhnU135MFgAT3rXWX0Q/vv5mTXmDSer4ugFQQ1qso9zJ2JVogC0Bk8RUTettbR1pQjFak9HxdgCyCeeXurH/DvE6Vpc5vkeFdMCFMF7MAAAAASUVORK5CYII=">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA/klEQVQ4T+3TPU8CQRAG4Hd214uXnIiFVpSWJLSU0lLRUNDzH/An8FeEBhK0EEpLShM7Kyto+CqEu7lxl48QkivWkFi59cwzm513CWcecv0iIIyQW8UIfLwoRIwHzIkgO2CI60SZrpVKPoBt+zAmqVEFsy2wfMHtZaDfAbrzAiCT7w0Xr6qY/gN/9QZ23U92Oz0wkv2W1pr5lapYe23BAg2t+Y03uuyAVKmvCxOPbQ4SP4Clvg2cpg6BPhnpY6C592sAWrVZ0lZguO+aHbqL8gA3HJqBiNxnJZEYTXvtqVBaOEw+1B0/0zPyKwWTBUTAAqF9QjdxP/kE8Mt/dtUPIdOQEbWPNoEAAAAASUVORK5CYII=">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>memoNote</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans:400,500&display=swap">
-    
-    
-  <script type="module" crossorigin src="/assets/index.e1fcf8ab.js"></script>
-  <link rel="stylesheet" href="/assets/index.92b9a220.css">
+
+
+    <script src="./assets/index.e1fcf8ab.js" defer></script>
+    <link rel="stylesheet" href="./assets/index.92b9a220.css">
 </head>
 
 <body>
     <div class="app">
         <header class="app-header">
-            <img src="/assets/logo.e42fdce7.svg" alt="Your Note" class="brand">
+            <img src="./assets/logo.e42fdce7.svg" alt="Your Note" class="brand">
             <h1>memo<strong>Note</strong></h1>
         </header>
         <main>
@@ -65,7 +67,7 @@
             <span class="color" style="background-color: #a7ffeb"></span>
         </div>
         <footer class="app-footer">
-            <img src="/assets/logo.e42fdce7.svg" alt="Your Note" class="brand">
+            <img src="./assets/logo.e42fdce7.svg" alt="Your Note" class="brand">
             <div class="text">memo<strong>Note</strong> by <a href="https://www.paoloduzioni.it" target="_blank">Paolo
                     Duzioni</a></div>
         </footer>
