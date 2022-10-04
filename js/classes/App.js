@@ -1,6 +1,6 @@
-import escapeHtml from './utilities/escapeHtml';
+import escapeHtml from '../utilities/escapeHtml';
 
-class App {
+export default class App {
     constructor() {
         // Props
         this.notes = this.getNotes();
@@ -204,5 +204,3 @@ class App {
         localStorage.setItem('notes', JSON.stringify(this.notes));
     }
 }
-
-new App();
